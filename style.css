@@ -47,3 +47,20 @@ main{
     width: 50px;
     border-radius: 10px;
 }
+@media (max-width: 470px){
+    #telefone {
+        background-size: 300px;
+    }
+    #tela{
+        top: 29.4px;
+        left: 24px;
+        width: 255px;
+        height: 545px;
+    }
+    #apps{
+        margin-top: 120px;
+    }
+    #apps img{
+        width: 40px;
+    }
+}
