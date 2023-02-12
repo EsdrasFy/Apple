@@ -10,6 +10,7 @@ html,body{
 body{
     background: url(fundo-branco-preto13.webp) no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 main{
     position: relative;
@@ -21,6 +22,7 @@ main{
     top: 50%;
     transform: translate(-50%,-50%);
     background: url(60-609332_download-iphone-xs-transparent-background-hd-png-download-removebg-preview.png) no-repeat fixed;
+    background-attachment: fixed;
     height: 690px;
     width: 347px;
 }
@@ -33,10 +35,13 @@ main{
     background-size: cover; 
     border-radius: 27px;
 }
+li{
+    list-style: none;
+}
 #apps{
     position: absolute;
     right: 0px;
-    margin-top: 120px;
+    margin-top: 150px;
 
 }
 #sub{
@@ -58,9 +63,69 @@ main{
         height: 545px;
     }
     #apps{
-        margin-top: 120px;
+        margin-top: 160px;
     }
     #apps img{
         width: 40px;
     }
+}
+@media (max-width: 350px){
+ 
+    ::-webkit-scrollbar{
+        display: none;}
+    #telefone {
+        background-size: 330px;
+        top: 40%;
+        left: 53%;
+    }
+    #tela{
+        top: 33px;
+        left: 26px;
+        width: 280px;
+        height: 600px;
+        border-radius: 26px;
+    }
+#apps{
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    bottom: 40px;
+    left: 15px;
+}
+li{
+    display: inline;  
+    line-height: 70px;
+}
+li img{
+}
+#apps img{
+    width: 45px;
+}
+}
+@media (max-width: 320px){
+    
+#telefone {
+    background-size: 270px;
+    top: 33%;
+    margin-left: 30px;
+}
+#tela{
+    top: 25.5px;
+    left: 24.7px;
+    width: 225px;
+    height: 493px;
+    border-radius: 22px;
+}
+ 
+ #apps{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    bottom: 40px;
+    max-width: 100%;
+}
+#apps img{
+    width: 59px;
+}
+li{
+    
+}
 }
