@@ -54,6 +54,14 @@ li{
     width: 50px;
     border-radius: 10px;
 }
+#apps img:hover {
+    transform: translate(-5px, -5px);
+    transition: 300ms;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+}
+#iii{
+    
+}
 @media (max-width: 470px){
     #telefone {
         background-size: 300px;
